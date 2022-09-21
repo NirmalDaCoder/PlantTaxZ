@@ -1,0 +1,12 @@
+what has been implemented :
+speech recognition
+text to speech 
+the core model
+
+what to be improved:
+text to speech
+speech recognition
+
+what i am looking to add:
+wake word
+
