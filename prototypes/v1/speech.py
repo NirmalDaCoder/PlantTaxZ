@@ -3,7 +3,7 @@ import pyttsx3
 class speech_engine:
     def __init__(self, speech_rate, volume, voice_id) -> None:
         # initializing engine
-        self.engine = pyttsx3.init()
+        self.engine = pyttsx3.init(driverName="espeak")
         # variable definition
         self.speech_rate = speech_rate
         self.volume = volume
@@ -29,7 +29,7 @@ class speech_engine:
 
 # testing the speech engine
 if __name__ == '__main__':
-    engine = speech_engine(190, 0.8, 11)
+    engine = speech_engine(190, 0.8, 17)
     print(engine)
-    engine.speak("Hello! This is a small test of the speech engine . I have printed some details about the test")
+    engine.speak("Hi This is a small test of the speech engine . I have printed some details about the test")
 
